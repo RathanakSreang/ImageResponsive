@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Responsive</title>
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    body {
+      text-align: center;
+    }
+
+    .image {
+      background: transparent url(img/people-14.jpg) no-repeat top left;
+    }
+
+    @media only screen and (min-width: 768px) {
+      .image {
+        width: 3500px;
+        height: 2333px;
+        max-width: 100%;
+        background-size: 100% auto;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .image {
+        width: 700px;
+        height: 700px;
+        max-width: auto;
+        background-position: -2500px -1633px;
+        background-size: auto auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="img/people-14.jpg" alt="People" />
+
+  <h1>Beautiful Lady</h1>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum autem quisquam quis perferendis consequuntur accusamus provident at aspernatur voluptate quaerat placeat quo esse porro molestias deleniti eligendi, ipsam veniam illum!</p>
+
+  
+
+  <div class="image"></div>
+
+  <h1>Beautiful Lady</h1>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum autem quisquam quis perferendis consequuntur accusamus provident at aspernatur voluptate quaerat placeat quo esse porro molestias deleniti eligendi, ipsam veniam illum!</p>
+</body>
+</html>

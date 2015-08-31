@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Responsive</title>
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<img 
+  srcset="
+    img/desktop.jpg 1024w,
+    img/tablet.jpg 768w,
+    img/mobile.jpg 480w"
+  src="desktop.jpg" 
+  alt="Food">
+  <h1>Hadding Image responsive</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum autem quisquam quis perferendis consequuntur accusamus provident at aspernatur voluptate quaerat placeat quo esse porro molestias deleniti eligendi, ipsam veniam illum!</p>
+</body>
+</html>
